@@ -97,4 +97,4 @@ Taking it a notch further, we could define an abstract class for a general chess
 
 ## Closing
 
-This was a quick introduction to React, more of an informative one to get you started on understanding and appreciating React applications as a whole. We have also provided a practical attempt, also many practical tutorials exist on the internet. 
+This was a quick introduction to React, more of an informative one to get you started on understanding and appreciating React applications as a whole. We have also provided a practical attempt, many practical tutorials also exist on the internet. 
