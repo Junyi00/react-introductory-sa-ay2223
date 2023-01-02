@@ -47,7 +47,34 @@ Hence, we will be discussing what Source Academy's organisation is later onwards
 
 ## React's Project Organisation
 
+<img src="./assets/react_app_structure.jpg" width="200px" /><br />
+> _The project in this picture was freshly created for demonstration purpose with the folders in _src/_ created by me._
 
+React does not impose on a specific folder structure, hence any projects can look different but this image shows one typical style of managing your codebase.
+
+#### Overall
+| File / Folder | Description |
+| -:|:- |
+| node_modules | installed packages |
+| public/ | |
+| src/ | Actual codebase that renders your UI |
+| .gitignore | Used for Git |
+| package-lock.json | Used by NPM |
+| package.json | Used by NPM / Yarn |
+| README.md | Guide to your codebase / application |
+
+#### src/
+| File / Folder | Description |
+| -:|:- |
+| assets/ | media files (etc. images, icons)|
+| components/ | react components|
+| pages/ | pages which users navigate between |
+| styles/ | stylesheets (CSS, SCSS, ...) |
+| _..others_ | |
+
+With other use cases and libraries, more folders may/should be created for better organisation. Once again, the organisation is up to you to decide best for your development purposes.
+
+## React Components
 
 ## React Router
 
