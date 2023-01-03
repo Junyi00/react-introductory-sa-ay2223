@@ -113,10 +113,11 @@ class AnExampleClassComponent extends React.Component {
 
 Before `React Hooks` were introduced, class components were the only option for stateful components. However, hooks now allow functional components to utilise React functionalities that class components had. 
 
-Furthermore, official React docs seem to `prefer functional components` now as hooks can be abstracted out and shared between components! [Read More](https://reactjs.org/docs/hooks-intro.html)
+Furthermore, official React docs seem to `prefer functional components` as hooks can be abstracted out and shared between components! [Read More](https://reactjs.org/docs/hooks-intro.html)
 
 ## React Router
-> React Router has changed syntax greatly over multiple major udpates. Following Source Academy, we will use 5.2.1 here.
+> React Router has changed syntax greatly over major updates. Following Source Academy, we will use 5.2.1 here.  
+> The syntax used below is most likely outdated if newer major versions of React Router are used.
 
 Using React Router, we can perform `client-side routing` to provide a better user experience. A typical page load will lead to white screen flash due to the browser loading a new page from the server. React Router can prevent this by only loading the necessary components as a new page is requested within your application.
 
@@ -143,6 +144,8 @@ ReactDOM.render(
 2. Register your switches & routes
 
 ```javascript
+// src/App.js
+
 const App = () => {
   return <div>
     <p>React Router Example</p>
@@ -157,8 +160,10 @@ Given that you have created two components `LandingPage` and `InfoPage`, _Switch
 
 3. Add Links 
 ```javascript
+// src/App.js
+
 const App = () => {
-    return <div>
+  return <div>
     <div>
       <Link to="/">Home</Link>
       <Link to="/info">Learn More</Link>
