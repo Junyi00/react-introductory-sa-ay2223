@@ -56,7 +56,7 @@ React does not impose on a specific folder structure, hence any react project ca
 
 Let's look into what some of the individual files/folders are for
 
-#### Base
+#### Base Structure
 | File / Folder | Description |
 | -:|:- |
 | node_modules | installed packages |
@@ -67,7 +67,7 @@ Let's look into what some of the individual files/folders are for
 | package.json | Used by NPM / Yarn |
 | README.md | Guide to your codebase / application |
 
-#### src/
+#### src/ Structure
 | File / Folder | Description |
 | -:|:- |
 | assets/ | media files (etc. images, icons)|
@@ -119,7 +119,7 @@ Furthermore, official React docs seem to `prefer functional components` as hooks
 > React Router has changed syntax greatly over major updates. Following Source Academy, we will use 5.2.1 here.  
 > The syntax used below is most likely outdated if newer major versions of React Router are used.
 
-Using React Router, we can perform `client-side routing` to provide a better user experience. A typical page load will lead to white screen flash due to the browser loading a new page from the server. React Router can prevent this by only loading the necessary components as a new page is requested within your application.
+Using React Router, we can perform `client-side routing` to provide a better user experience. A typical page load will lead to white screen flash due to the browser loading a new page from the server. React Router can prevent this by only reloading the necessary components as a new page is requested within your application.
 
 Using React Router does not break typical browser functionalities such as refresh and going backward / forward.
 
