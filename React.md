@@ -42,7 +42,7 @@ React is one of the modern frontend library that has grown popularity recently. 
 
 As mentioned, React is a frontend JavaScript library developed **building user interfaces** .
 
-It is `declarative-based`, where you describe the final state of the UI you desire and React is responsible for determining the necessary changes to achieve that goal. [Read More](https://ui.dev/imperative-vs-declarative-programming)
+It is `declarative`, where you describe the final state of the UI you desire and React is responsible for determining the necessary changes to achieve that goal. [Read More](https://ui.dev/imperative-vs-declarative-programming)
 
 It is `unopiniated` or flexible in a sense, it leaves the build and structure of the application to you. Every react project can look different in file structure or organisation, there is **no one right way**. 
 Hence, we will be discussing what Source Academy's organisation is later onwards.
@@ -85,9 +85,34 @@ With other use cases and libraries, more folders may/should be created for bette
 
 React components is a core building block for React applications. They are like blueprints, allowing you to create similar or same objects when they are needed anywhere in your application.
 
+### A Practical Application
 For an example, a chess board would have multiple rook pieces. A rook piece component could be created where its states and render logic is **defined once**, and then **called or created multiple times** when the board is rendered.
 
 Taking it a notch further, we could define an abstract class for a general chess board piece instead. Then, depending on your preference, you could create separate components for each unique pieces (rook, queen, king) that inherit this piece component. Or, the piece component itself has properties that defines the type of piece. Many other implementations are possible as well!
+
+### Functional VS Class Components
+
+There are primarily two types of components: Functional and Class components.
+
+**Functional Components** are basically functions that returns a JSX or React element. 
+```javascript
+function AnExampleFunctionComponent(props) {
+    return <p>Welcome to {props.website_name}</p>;
+}
+```
+
+**Class Components** are ES6 classes that extends upon React component class which has a `render()` method that returns a JSX.
+```javascript
+class AnExampleClassComponent extends React.Component {
+    render() {
+        return <p>Welcome to {props.website_name}</p>;
+    }
+}
+```
+
+Before `React Hooks` were introduced, class components were the only option for stateful components. However, hooks now allow functional components to utilise React functionalities that class components had. 
+
+Furthermore, official React docs seem to `prefer functional components` now as hooks can be abstracted out and shared between components! [Read More](https://reactjs.org/docs/hooks-intro.html)
 
 ## React Router
 
