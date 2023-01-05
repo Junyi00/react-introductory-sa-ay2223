@@ -123,11 +123,18 @@ Using React Router, we can perform `client-side routing` to provide a better use
 
 Using React Router does not break typical browser functionalities such as refresh and going backward / forward.
 
+### Visually Different
+
+<img src="./assets/react_router_positive_example.gif" width="400px" />
+<img src="./assets/react_router_negative_example.gif" width="400px" /></br>
+
+As you can see, IMDB's website reloads the entire header (the IMDB logo refreshes) while AirBnB website's header stays constant, adding only the necessary search bar.
+
 ### Client-Side Routing
 
 #### Pros
 - Routing between components/pages are more likely to be quicker
-- Animations and transitions between pages
+- Animations and transitions between pages is possible
 - Does not incur a browser refresh (white screen flash)
 
 #### Cons
