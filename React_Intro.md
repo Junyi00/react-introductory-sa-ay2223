@@ -75,9 +75,9 @@ Let's look into what some of the individual files/folders are for
 | pages/ | pages which users navigate between |
 | styles/ | stylesheets (CSS, SCSS, ...) |
 | App.js  | Top-level React component |
-| App.css | |
 | index.js | Entry point of application |
-| index.css | |
+| App.css | App.js specific stylesheet |
+| index.css | Global css stylesheet |
 | _..others_ | |
 
 With other use cases and libraries, more folders may/should be created for better organisation. Once again, the organisation is up to you to decide best for your development purposes.
