@@ -16,7 +16,7 @@ React is one of the modern frontend library that has grown popularity recently. 
 
 2. High Performance through Virtual DOM
 
-    A virtual representation of the UI is kept in memory through ReactDOM. By comparing previou states, it updates only the neccessary parts of the real DOM to minimise reads/writes, boosting performance compared to traditional web applications.
+    A virtual representation of the UI is kept in memory through ReactDOM. By comparing previous states, it updates only the neccessary parts of the real DOM to minimise reads/writes, boosting performance compared to traditional web applications.
     [Official React Doc](https://reactjs.org/docs/faq-internals.html)  
 
 3. Many supporting libraries available
@@ -74,8 +74,8 @@ Let's look into what some of the individual files/folders are for
 | components/ | react components|
 | pages/ | pages which users navigate between |
 | styles/ | stylesheets (CSS, SCSS, ...) |
+| App.js  | Top-level React component |
 | App.css | |
-| App.js  | |
 | index.js | Entry point of application |
 | index.css | |
 | _..others_ | |
@@ -122,6 +122,22 @@ Furthermore, official React docs seem to `prefer functional components` as hooks
 Using React Router, we can perform `client-side routing` to provide a better user experience. A typical page load will lead to white screen flash due to the browser loading a new page from the server. React Router can prevent this by only reloading the necessary components as a new page is requested within your application.
 
 Using React Router does not break typical browser functionalities such as refresh and going backward / forward.
+
+### Client-Side Routing
+
+#### Pros
+- Routing between components/pages are more likely to be quicker
+- Animations and transitions between pages
+- Does not incur a browser refresh (white screen flash)
+
+#### Cons
+- Initial loading time is large, the whole website is loaded on initialisation (Code-splitting can circumvent this issue)
+- Routing logic may be cumbersome to maintain
+- Search engine crawling algorithms may not pick up site contents well
+
+Server-side routing seems to be possible with 3rd party libraries, do explore these options if necessary when building your application.
+
+### Brief Implementation Details
 
 We'll describe briefly how React Router is implemented below. 
 
@@ -181,6 +197,26 @@ _Link_ are basically buttons that will navigate the browser to the given locatio
 Many finer details have been skipped and complexed topics such as nested routings are not covered here. Do read up more if you are interested.
 
 ## Redux
+
+Redux is a library that assists in managing and updating global application state, using events called 'actions'. It serves as a centralized store for state that needs to be used across your entire application, with rules ensuring that the state can only be updated in a predictable fashion.
+
+### Why?
+
+Class/Functional components can have states of their own, so what’s the point? Certain states are passed down from parent to children, and possibly **propagated deeply**. The codebase can grow increasingly unreadable / clunky.
+
+Imagine building a website that manages the characters in Star Wars Universe and you are logged in as Darth Vader. 
+
+<img src="./assets/star_wars_site.jpg" width="500px" /><br />
+
+Only Darth Vader is allowed to edit his own information, hence the table cell component needs to know the _state of the currently logged in user_. In vanilla React, you need to propogate this information down from the top level App component, down its children, eventually passing this state to the table cell.
+
+<img src="./assets/star_wars_component_tree.jpg" width="300px" /><br />
+
+Imagine passing implementation role based permissions, codebase gets complicated or clunky quickly with numerous states passing down (eg. user, isAdmin, isOwner, isFactionLeader, ...). 
+
+Therefore, Redux enters the scene and introduces a _store that is accessible from any component_, removing the need for propogation in this case.
+
+Now, states can be managed throughout your app by propogation or through the Redux store. However, there are tradeoffs to using Redux - extra dependency, more boilerplate code and more code to maintain/test are just a few of the considerations to be made. [Read More](https://redux.js.org/faq/general#when-should-i-use-redux)
 
 ## Closing
 
