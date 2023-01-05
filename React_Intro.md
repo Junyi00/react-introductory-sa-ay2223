@@ -137,64 +137,6 @@ Using React Router does not break typical browser functionalities such as refres
 
 Server-side routing seems to be possible with 3rd party libraries, do explore these options if necessary when building your application.
 
-### Brief Implementation Details
-
-We'll describe briefly how React Router is implemented below. 
-
-1. Wrap your app with Router Provider
-
-> Different routers exists, `BrowserRouter` is usually the default choice.
-```javascript
-// src/index.js
-
-...
-
-ReactDOM.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
-  document.getElementById("root")
-);
-```
-
-2. Register your switches & routes
-
-```javascript
-// src/App.js
-
-const App = () => {
-  return <div>
-    <p>React Router Example</p>
-    <Switch>
-      <Route path="/" component={LandingPage} />
-      <Route path="/info" component={InfoPage} />
-    </Switch>
-  </div>;
-};
-```
-Given that you have created two components `LandingPage` and `InfoPage`, _Switch_ will choose the `first` _Route_ that matches the URL path of your browser to render the component corresponding to that chosen _Route_. In fact, _Switch_ is optional, multiple _Route_ may 'trigger' then.
-
-3. Add Links 
-```javascript
-// src/App.js
-
-const App = () => {
-  return <div>
-    <div>
-      <Link to="/">Home</Link>
-      <Link to="/info">Learn More</Link>
-    </div>
-    <Switch>
-      <Route path="/" component={LandingPage} />
-      <Route path="/info" component={InfoPage} />
-    </Switch>
-  </div>;
-};
-```
-
-_Link_ are basically buttons that will navigate the browser to the given location.
-
-Many finer details have been skipped and complexed topics such as nested routings are not covered here. Do read up more if you are interested.
 
 ## Redux
 
