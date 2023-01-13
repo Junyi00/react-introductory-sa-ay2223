@@ -17,18 +17,26 @@ This workshop is organised by Goh Jun Yi & Santosh Muthukrishnan, advised by Pro
 ## Workshop Contents
 > All workshop materials are uploaded here, feel free to browse and raise any issues!
 
-Structure of Workshop: TBC
+1. Introduction to React
+2. React Libraries
+3. React Demo
+4. Break
+5. Source Academy's Tech Stack
+6. Solve a bug! (in Source Academy)
 
 
 ## Other Useful Links
 
-#### React Official
-#### React Installation
+[React Official](https://reactjs.org/)
 
-#### Redux Official
-#### Redux Tutorial
+#### Redux
+[Redux Official](https://redux.js.org/)  
+[Redux Tutorial](https://redux.js.org/tutorials/index)  
+[Redux Toolkit](https://redux-toolkit.js.org/)  
+[Redux-Saga](https://redux-saga.js.org/)
 
-#### BluePrintJS Official
-#### BluePrintJS Tutorial
+
+### BlueprintJS
+#### [BluePrintJS Official](https://blueprintjs.com/)
 
 
