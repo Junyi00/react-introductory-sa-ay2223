@@ -15,6 +15,7 @@ This workshop is organised by Goh Jun Yi & Santosh Muthukrishnan, advised by Pro
 - Gain familiarity with Source Academy's Tech Stack
 
 ## Workshop Contents
+
 > All workshop materials are uploaded here, feel free to browse and raise any issues!
 
 1. Introduction to React
@@ -24,19 +25,19 @@ This workshop is organised by Goh Jun Yi & Santosh Muthukrishnan, advised by Pro
 5. Source Academy's Tech Stack
 6. Solve a bug! (in Source Academy)
 
-
 ## Other Useful Links
 
 [React Official](https://reactjs.org/)
+[React Router](https://v5.reactrouter.com/web/guides/quick-start)
+[Axios](https://axios-http.com/docs/intro)
 
 #### Redux
+
 [Redux Official](https://redux.js.org/)  
 [Redux Tutorial](https://redux.js.org/tutorials/index)  
 [Redux Toolkit](https://redux-toolkit.js.org/)  
 [Redux-Saga](https://redux-saga.js.org/)
 
-
 ### BlueprintJS
+
 #### [BluePrintJS Official](https://blueprintjs.com/)
-
-
