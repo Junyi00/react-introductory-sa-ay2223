@@ -27,8 +27,8 @@ This workshop is organised by Goh Jun Yi & Santosh Muthukrishnan, advised by Pro
 
 ## Other Useful Links
 
-[React Official](https://reactjs.org/)
-[React Router](https://v5.reactrouter.com/web/guides/quick-start)
+[React Official](https://reactjs.org/)  
+[React Router](https://v5.reactrouter.com/web/guides/quick-start)  
 [Axios](https://axios-http.com/docs/intro)
 
 #### Redux
